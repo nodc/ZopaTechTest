@@ -41,3 +41,10 @@ Monthly repayment: £XXXX.XX
 
 Total repayment: £XXXX.XX
 
+
+Example:
+cmd> quote.exe market.csv 1000
+Requested amount: £1000
+Rate: 7.0%
+Monthly repayment: £30.78
+Total repayment: £1108.10
