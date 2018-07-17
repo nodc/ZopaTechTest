@@ -48,8 +48,8 @@ public class Lender implements Comparable<Lender> {
 
     @Override
     public int compareTo(Lender o) {
-       if (rate> o.rate) return 1;
-       if (rate==o.rate) return 0;
-       return -1;
+        if (rate > o.rate) return 1;
+        if (rate == o.rate) return 0;
+        return -1;
     }
 }

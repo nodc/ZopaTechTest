@@ -12,9 +12,8 @@ public class Quote {
 
     public static void main(String[] args) throws IOException {
 
-        if (args.length!=2) System.out.println("Input error. Try again.");
-        else
-            {
+        if (args.length != 2) System.out.println("Input error. Try again.");
+        else {
             File lendersFile = new File(args[0]);
 
             if (!lendersFile.exists() || !isAmountCorrect(args[1])) System.out.println("Input error. Try again!");
@@ -23,7 +22,7 @@ public class Quote {
                 try {
                     SVSContract contract = new SVSContract(lendersFile, amount, months);
                     System.out.println(contract);
-                }catch (CanNotCreateContractException e){
+                } catch (CanNotCreateContractException e) {
                     System.out.println("It is not possible to provide a quote at that time.");
                 }
 
@@ -31,16 +30,15 @@ public class Quote {
         }
     }
 
-    public static boolean isAmountCorrect(String amountValue){
+    public static boolean isAmountCorrect(String amountValue) {
         try {
             amount = Integer.parseInt(amountValue);
-            if (amount % 100!=0 || amount<=0) return false;
-             else return true;
+            if (amount % 100 != 0 || amount <= 0) return false;
+            else return true;
         } catch (NumberFormatException e) {
         }
         return false;
     }
-
 
 
 }
