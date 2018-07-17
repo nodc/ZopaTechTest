@@ -21,30 +21,28 @@ Borrowers should be able to request a loan of any £100 increment between
 lenders to satisfy the loan then the system should inform the borrower that it
 is not possible to provide a quote at that time.
 
-The application should take arguments in the form:
+# The application should take arguments in the form:
 
 cmd> [application] [market_file] [loan_amount]
 
-Example:
+# Example:
 
 cmd> quote.exe market.csv 1500
 
-The application should produce output in the form:
+# The application should produce output in the form:
 
 cmd> [application] [market_file] [loan_amount]
 
-Requested amount: £XXXX
-
-Rate: X.X%
-
-Monthly repayment: £XXXX.XX
-
+Requested amount: £XXXX  
+Rate: X.X%  
+Monthly repayment: £XXXX.XX  
 Total repayment: £XXXX.XX
 
+==========================================================
+# Example:
 
-Example:
-cmd> quote.exe market.csv 1000
-Requested amount: £1000
-Rate: 7.0%
-Monthly repayment: £30.78
+cmd> quote.exe market.csv 1000  
+Requested amount: £1000  
+Rate: 7.0%  
+Monthly repayment: £30.78  
 Total repayment: £1108.10
