@@ -34,7 +34,10 @@ The application should produce output in the form:
 cmd> [application] [market_file] [loan_amount]
 
 Requested amount: £XXXX
+
 Rate: X.X%
+
 Monthly repayment: £XXXX.XX
+
 Total repayment: £XXXX.XX
 
