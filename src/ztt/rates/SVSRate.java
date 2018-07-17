@@ -5,6 +5,7 @@ import ztt.lenders.Lender;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by admin on 13.07.2018.
@@ -23,7 +24,7 @@ public class SVSRate implements Rate {
     }
 
     private BigDecimal calculate(ContractLendersList list){
-        ArrayList<Lender> lendersList = list.getLenders();
+        List<Lender> lendersList = list.getLenders();
         double sumPayment = 0;
         int sumAmount = 0;
         for (Lender lender : lendersList){
