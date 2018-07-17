@@ -37,3 +37,4 @@ Requested amount: £XXXX
 Rate: X.X%
 Monthly repayment: £XXXX.XX
 Total repayment: £XXXX.XX
+
