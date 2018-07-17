@@ -38,7 +38,6 @@ Rate: X.X%
 Monthly repayment: £XXXX.XX  
 Total repayment: £XXXX.XX
 
-==========================================================
 # Example:
 
 cmd> quote.exe market.csv 1000  
