@@ -15,7 +15,7 @@ public class SVSRate implements Rate {
     private BigDecimal rate;
 
     public SVSRate(ContractLendersList lenders) {
-        this.rate = calculate(lenders);
+        rate = calculate(lenders);
     }
 
     @Override
