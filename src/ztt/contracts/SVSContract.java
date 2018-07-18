@@ -34,7 +34,7 @@ public class SVSContract implements Contract {
             this.rate = new SVSRate(contractLenders);
             this.amount = amount;
             this.months = months;
-            BigDecimal mRepayment = BigDecimal.valueOf(0);
+            BigDecimal mRepayment = BigDecimal.valueOf(0); // может быть объявление сделать внутри for? 
 
             for (Lender lender : contractLenders.getLenders()) {
 
