@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class Quote {
-    public static final int months = 36;
+    public static final int months = 36; // constants should be in UPPERCASE, like MONTHS
     private static int amount;
 
     public static void main(String[] args) throws IOException {
