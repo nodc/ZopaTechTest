@@ -1,5 +1,6 @@
 package ztt;
 
+import ztt.contracts.Contract;
 import ztt.contracts.SVSContract;
 import ztt.exceptions.CanNotCreateContractException;
 
@@ -20,7 +21,7 @@ public class Quote {
             else {
 
                 try {
-                    SVSContract contract = new SVSContract(lendersFile, amount, months);
+                    Contract contract = new SVSContract(lendersFile, amount, months);
                     System.out.println(contract);
                 } catch (CanNotCreateContractException e) {
                     System.out.println("It is not possible to provide a quote at that time.");

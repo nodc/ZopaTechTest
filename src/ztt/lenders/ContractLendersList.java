@@ -2,6 +2,7 @@ package ztt.lenders;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -9,7 +10,7 @@ import java.util.ArrayList;
  */
 public class ContractLendersList {
 
-    private ArrayList<Lender> lenders = new ArrayList<>();
+    private List<Lender> lenders = new ArrayList<>();
 
     public ContractLendersList(LendersList lendersList, int amount) {
         int sumOfAvailible = 0;
@@ -27,7 +28,7 @@ public class ContractLendersList {
 
     }
 
-    public ArrayList<Lender> getLenders() {
+    public List<Lender> getLenders() {
         return lenders;
     }
 }
